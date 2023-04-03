@@ -1,0 +1,144 @@
+.contain-ff {
+    background-color: #222F3D;
+    border-top: 1px solid hsla(18, 43%, 58%, .1);
+    width: 100%;
+    height: 100%;
+    /* padding: 4rem 0 2rem 0; */
+    border-radius: 1px !important;
+    /* margin-top: 20px; */
+}
+
+.wrapper-for-contain-ff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1180px;
+    margin: 0 130px;
+    padding: 30px 0 20px;
+}
+
+.for-nav-item {
+    width: 80%;
+    min-height: auto;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item-aa {
+    color: #107355;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.for-logo-text {
+    width: 20%;
+}
+
+.logo-footer-second {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.under-footer-second {
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    /* padding-top: 10px; */
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid hsla(18, 43%, 58%, .1);
+    padding-bottom: 20px;
+}
+
+.just-item-social {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fa-twitter,
+.fa-linkedin {
+    color: #fff;
+}
+
+.just-item-social :hover {
+    transition: all .4s ease-in-out;
+    color: #107355;
+}
+
+.text-under-social-item {
+    width: 100%;
+}
+
+.main-content-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 11px;
+    color: #494949;
+}
+
+.content-cc {
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.content-cc:hover {
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+#new-text {
+    font-size: 12px;
+    color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+    .for-nav-item {
+        display: none;
+    }
+    .just-item-social {
+        width: 33%;
+    }
+    .content-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-cc,
+    #new-text {
+        padding-top: 10px;
+    }
+}

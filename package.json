@@ -1,0 +1,37 @@
+{
+  "name": "metatrine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/rezaslk/metatrine.git"
+  },
+  "keywords": [],
+  "author": "reza salek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/rezaslk/metatrine/issues"
+  },
+  "homepage": "https://gitlab.com/rezaslk/metatrine#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "http-proxy-middleware": "^2.0.6",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

@@ -1,0 +1,247 @@
+/* video {
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  } */
+
+.about-us-img   {
+    position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100vw;
+height: 100vh;
+object-fit:cover;
+  }
+  .hero-container {
+    /* background: "url('/images/img-home.jpg')" center center/cover no-repeat; */
+    /* background-position: center bottom; */
+    position: relative;
+    top: -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    z-index: 99;
+
+  }
+  .hero-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  .btns {
+    padding:12px 26px;
+    border-radius:25px;
+    font-size: 20px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #242424;
+  }
+  
+  .btns:hover {
+    background: #107355;  /* fallback for old browsers */
+    
+    color: #fff;
+    transition: all .5s ease-in;
+  }
+  .callbtn {
+    padding: 8px 20px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    position: relative;
+    color: #fff;
+    z-index: 999;
+    /* background-color: #C0D764; */
+    background-image: linear-gradient(to right top, #107355, #008254, #00904f, #009f47, #0cad39);
+    /* background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
+    box-shadow: 0px 2px 20px rgb(255, 255, 255);
+  }
+  .callbtn-getintouch {
+    padding: 8px 20px;
+    border-radius: 25px;
+    outline: none;
+    border:none;
+    position: relative;
+    color: #fff;
+    z-index: 999;
+    /* background-color: #C0D764; */
+    background-image: linear-gradient(to right top, #107355, #008254, #00904f, #009f47, #0cad39);
+    /* background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% ); */
+    box-shadow: 0px 2px 20px rgb(255, 255, 255);
+  }
+
+
+  .callbtn-getintouch::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 8px 20px;
+    background: #e6e9e8;
+    border-radius: 25px;
+    z-index: 1;
+    animation: animation 2s infinite;
+}
+  .callbtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 8px 20px;
+    background: #e6e9e8;
+    border-radius: 25px;
+    z-index: 1;
+    animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    0% {
+      transform: scale(1);
+      opacity: .9;
+      z-index: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+.callbtn:hover {
+    color: #fff;
+}
+
+
+
+  /* .text-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  } */
+  .hero-container > h1 {
+    color: #fff;
+    font-size:70px;
+    margin-top: -100px;
+  }
+  
+  .hero-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  .fa-whatsapp {
+    margin-right: 4px;
+  }
+ .sticky-butt {
+  position: fixed ; 
+  right: 35px;
+  bottom: 40px;
+  z-index: 999;
+  background: transparent;
+  z-index: 999;
+   
+}
+ .sticky-butt-getintouch {
+  position: fixed ; 
+  transform: rotate(-90deg);
+  /* left:150px; */
+  right:-35px;
+  
+  top:150px;
+  /* bottom: 0; */
+  z-index: 999;
+  background: transparent;
+  z-index: 999;
+   
+}
+.sticky-insta {
+  position: absolute ; 
+  left: 120px;
+  bottom: 110px;
+  z-index: 999;
+  background: transparent;
+  z-index: 990;
+}
+.fa-instagram {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.sticky-insta:hover .fa-instagram {
+  transform: translateY(-5px);
+}
+
+.btn-mobile {
+position: relative; 
+
+}
+  
+  @media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+    .sticky-insta , .sticky-butt  , .sticky-butt-getintouch{
+      display: none;
+    }
+  }
+  

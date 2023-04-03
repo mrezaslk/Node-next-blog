@@ -1,0 +1,29 @@
+.image-handle-bigger {
+    min-height: auto;
+}
+.edit-image-handle-with-text {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.for-text-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0 0 35px;
+}
+.txt-first-comp {
+    font-size: 12px;
+    color: #4e545b;
+}
+.bigger-title {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.another-txt-comp {
+    font-size: 16px;
+    color: #4e545b;
+    width: 80%;
+}

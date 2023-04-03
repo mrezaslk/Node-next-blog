@@ -1,0 +1,68 @@
+
+.hndle-img-box-design {
+    min-height: auto;
+}
+.edit-design-img {
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.title-and-text-under-it {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.title-and-text-under-it h4 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.des-txt-design {
+    font-size: 16px;
+    margin: 20px 0;
+}
+.head-title-design {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tik-icon-svg {
+    width: 25px;
+    height: 25px;
+}
+.how-to-do-any-comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.how-to-do-any-comp span {
+    margin-left: 15px;
+    line-height: 1.9;
+    font-size: 16px;
+}
+.for-btns-design {
+    margin-top: 25px;
+}
+.for-btns-design button {
+    background-color: transparent;
+    outline: none;
+    /* text-transform: capitalize; */
+    border: solid 1px #222;
+    padding: 13px 23px;
+    border-radius: 8px;
+    transition: all ease-in-out .3s;
+
+
+}
+.for-btns-design button:hover {
+    transition: all ease-in-out .3s;
+    background-color: #006C5F;
+    color:#fff;
+    /* border:transparent; */
+}
+

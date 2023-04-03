@@ -1,0 +1,36 @@
+.mains {
+    height: 100vh;
+    /* overflow: hidden; */
+    padding: 0;
+   
+}
+.black-layer {
+    cursor: pointer;
+}
+.black-layer::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.39);
+    /* z-index: 1; */
+    transition: all ease-in-out .2s;
+}
+.black-layer:hover {
+    transition: all ease-in-out .3s;
+    transform: skew(1);
+}
+.black-layer:hover.black-layer::after {
+    transition: all ease-in-out .3s;
+    background-color: transparent;
+    /* transform: scale(1.1); */
+
+   
+}
+.logo-login-handle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

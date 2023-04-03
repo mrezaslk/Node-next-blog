@@ -1,0 +1,86 @@
+.for-main-div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main {
+    min-height: 600px;
+    margin: 40px 0;
+}
+.img-div-box {
+   width: 90%;
+   height: 500px;
+    z-index: -2;
+    position: absolute;
+    top: 120px;
+    border-radius: 4px;
+background-color: #ddd;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.img-div-box-second {
+    min-height: auto;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
+    border-radius: 4px;
+}
+.img-div-box-third {
+    width: 40%;
+    height: 350px;
+    position: absolute;
+    top: 90px;
+    left: 10%;
+    background-color: #fff;
+    border-radius: 4px;
+
+    z-index: 99;
+}
+.for-title-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 80px;
+}
+
+.edit-body-image {
+    width: 70%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+.for-title-body button {
+    margin-top: 40px;
+    padding: 12px 32px;
+    background-color: #107355;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.first-title {
+color: #222222;
+font-size: 20px;
+}
+.second-title {
+font-size: 32px;
+font-weight: 600;
+}
+
+@media screen and (max-width:1200px) {
+    .img-div-box-second {
+        /* width: 100% !important; */
+       margin-top:60px !important;
+       margin-bottom: 60px !important;
+       z-index: -9;
+    }
+    .edit-body-image {
+        width: 100%;
+        height: 80vh;
+     
+        min-height: auto;
+    }
+    
+}

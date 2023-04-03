@@ -1,0 +1,157 @@
+// .header {
+:root {
+    --ck-image-style-spacing: 1.5em;
+    --ck-inline-image-style-spacing: calc(var(--ck-image-style-spacing) / 2);
+}
+
+.ck-content {
+    img {
+        max-width: 100%;
+    }
+    /* Provides a minimal side margin for the left and right aligned images, so that the user has a visual feedback
+	confirming successful application of the style if image width exceeds the editor's size.
+	See https://github.com/ckeditor/ckeditor5/issues/9342 */
+    & .image-style-block-align-left,
+    & .image-style-block-align-right {
+        max-width: calc(100% - var(--ck-image-style-spacing));
+    }
+    /* Allows displaying multiple floating images in the same line.
+	See https://github.com/ckeditor/ckeditor5/issues/9183#issuecomment-804988132 */
+    & .image-style-align-left,
+    & .image-style-align-right {
+        clear: none;
+    }
+    & .image-style-side {
+        float: right;
+        margin-left: var(--ck-image-style-spacing);
+        max-width: 50%;
+    }
+    & .image-style-align-left {
+        float: left;
+        margin-right: var(--ck-image-style-spacing);
+    }
+    & .image-style-align-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    & .image-style-align-right {
+        float: right;
+        margin-left: var(--ck-image-style-spacing);
+    }
+    & .image-style-block-align-right {
+        margin-right: 0;
+        margin-left: auto;
+    }
+    & .image-style-block-align-left {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    /* Simulates margin collapsing with the preceding paragraph, which does not work for the floating elements. */
+    & p+.image-style-align-left,
+    & p+.image-style-align-right,
+    & p+.image-style-side {
+        margin-top: 0;
+    }
+    & .image-inline {
+        &.image-style-align-left,
+        &.image-style-align-right {
+            margin-top: var(--ck-inline-image-style-spacing);
+            margin-bottom: var(--ck-inline-image-style-spacing);
+        }
+        &.image-style-align-left {
+            margin-right: var(--ck-inline-image-style-spacing);
+        }
+        &.image-style-align-right {
+            margin-left: var(--ck-inline-image-style-spacing);
+        }
+    }
+}
+
+.ck.ck-splitbutton {
+    /* The button should display as a regular drop-down if the action button
+	is forced to fire the same action as the arrow button. */
+    &.ck-splitbutton_flatten {
+        &:hover,
+        &.ck-splitbutton_open {
+            &>.ck-splitbutton__action:not(.ck-disabled),
+            &>.ck-splitbutton__arrow:not(.ck-disabled),
+            &>.ck-splitbutton__arrow:not(.ck-disabled):not(:hover) {
+                background-color: var(--ck-color-button-on-background);
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &.ck-splitbutton_open:hover {
+            &>.ck-splitbutton__action:not(.ck-disabled),
+            &>.ck-splitbutton__arrow:not(.ck-disabled),
+            &>.ck-splitbutton__arrow:not(.ck-disabled):not(:hover) {
+                background-color: var(--ck-color-button-on-hover-background);
+            }
+        }
+    }
+}
+
+.blur-back {
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+}
+
+.language-but {
+    background-color: transparent;
+    border: #f1f2f4 0px solid;
+    border-radius: 20px;
+    font-size: 14px;
+    // font-weight: 600;
+    // color: #fff;
+    padding: 2px 8px 2px 4px;
+}
+
+.language-select-box {
+    position: absolute;
+    bottom: 32px;
+    background-color: #f2f6f8dd;
+    padding: 15px 15px;
+    border-radius: 8px;
+    // z-index: 100 !important;
+    .ltr & {
+        left: 0px;
+    }
+    .rtl & {
+        right: 0px;
+    }
+}
+
+.language-select-option {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    img {
+        height: 20px;
+    }
+}
+
+// }
+.transition-all {
+    transition: all 0.5s;
+}
+
+.placeholder {
+    font-size: 15px;
+    color: #9ab;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+canvas {
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    /* mobile webkit */
+}

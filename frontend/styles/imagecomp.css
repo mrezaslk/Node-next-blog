@@ -1,0 +1,68 @@
+
+.handle-component {
+ width: 100%;
+ height: 100%;
+}
+.main-handle-component {
+  width: 100%;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 15px;
+ position: relative;
+}
+.for-image {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+
+}
+.for-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+.edit-img-contact-us {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.title-and-btn {
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-text-edit {
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 54px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  width: 70%;
+}
+
+.main-button-edit {
+  color: #8A0193;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 1000px;
+margin-top: 15px;
+padding: 16px 32px;
+box-shadow: 0px 6px 20px rgb(0 0 0 / 20%);
+line-height: 20px;
+}

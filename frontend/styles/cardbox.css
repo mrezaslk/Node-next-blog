@@ -1,0 +1,72 @@
+
+
+.for-margin-bottom-test {
+    margin-bottom: 70px;
+}
+.title-for-card-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title-for-card-box h4 {
+    font-size: 34px;
+    font-weight: bold;
+}
+.box-card {
+    width: 70%;
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.box-card span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top:10px;
+
+}
+.test-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+.box-card:hover {
+background-color: #107355;
+color: #fff;
+transition: all ease-in-out .3s;
+}
+
+.test-padding {
+    padding: 0 90px !important;
+}
+.chev-icon {
+    position: relative;
+    top: 70px;
+    left: 70px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.edit-icon-industries {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width:768px) {
+    .test-padding {
+        padding: 0 !important;
+    }
+  
+}
